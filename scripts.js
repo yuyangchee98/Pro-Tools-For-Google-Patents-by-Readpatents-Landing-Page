@@ -126,4 +126,21 @@ document.addEventListener("DOMContentLoaded", function () {
     
     animateScreenshot();
   }
+  
+  // Handle screenshot animations on scroll
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  
+  function checkScroll() {
+    animatedElements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementVisible = 150;
+      
+      if (elementTop < window.innerHeight - elementVisible) {
+        element.classList.add('is-visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Check on initial load
 });

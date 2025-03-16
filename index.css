@@ -419,6 +419,12 @@ h6 {
     -webkit-text-fill-color: transparent;
 }
 
+.pattern-grid {
+    background-image: linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
 /* Form elements */
 input,
 select,
@@ -621,4 +627,23 @@ textarea:focus {
 .fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Animation classes for screenshots */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.animate__fadeInLeft {
+    transform: translateX(-50px);
+}
+
+.animate-on-scroll.animate__fadeInRight {
+    transform: translateX(50px);
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateX(0);
 }
