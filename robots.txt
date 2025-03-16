@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://tryreadpatents.yaaaang.com/sitemap.xml
+
+# Disallow crawling of certain file types
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.png$
+Disallow: /*.jpg$
