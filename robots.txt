@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
-Sitemap: https://tryreadpatents.yaaaang.com/sitemap.xml
+Sitemap: https://try-pro-tools-for-google-patents-by-readpatents.chyuang.com/sitemap.xml
 
 # Disallow crawling of certain file types
 Disallow: /*.js$
 Disallow: /*.css$
 Disallow: /*.png$
-Disallow: /*.jpg$
+Disallow: /*.jpg$`
