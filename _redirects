@@ -1,0 +1,8 @@
+# Force HTTPS
+http://try-pro-tools-for-google-patents-by-readpatents.chyuang.com/* https://try-pro-tools-for-google-patents-by-readpatents.chyuang.com/:splat 301!
+
+# Redirect www to non-www
+https://www.try-pro-tools-for-google-patents-by-readpatents.chyuang.com/* https://try-pro-tools-for-google-patents-by-readpatents.chyuang.com/:splat 301!
+
+# Handle 404 errors
+/* /404.html 404
